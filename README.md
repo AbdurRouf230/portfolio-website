@@ -16,7 +16,5 @@ Personal portfolio website: plain HTML, CSS and JavaScript (no build step).
 ## Run locally
 Open `index.html` in a browser, or run `python -m http.server` in this folder.
 
-## Deploy (GitHub Pages)
-1. Push this folder to a public GitHub repo.
-2. Repo → Settings → Pages → Source: `main` branch, `/ (root)`.
-3. The site will be live at `https://<username>.github.io/<repo>/`.
+## Live Link
+https://abdurrouf-portfolio.netlify.app/
