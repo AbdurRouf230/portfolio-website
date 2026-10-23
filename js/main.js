@@ -75,10 +75,10 @@
   /* ---------- Social buttons ---------- */
   const socialDefs = [
     { key: "github", icon: "fa-brands fa-github", label: "GitHub" },
-    { key: "leetcode", icon: "mask-icon icon-leetcode", label: "LeetCode" },
-    { key: "hackerrank", icon: "fa-brands fa-hackerrank", label: "HackerRank" },
     { key: "linkedin", icon: "fa-brands fa-linkedin-in", label: "LinkedIn" },
     { key: "facebook", icon: "fa-brands fa-facebook-f", label: "Facebook" },
+    { key: "leetcode", icon: "mask-icon icon-leetcode", label: "LeetCode" },
+    { key: "hackerrank", icon: "fa-brands fa-hackerrank", label: "HackerRank" },
     { key: "twitter", icon: "fa-brands fa-x-twitter", label: "X (Twitter)" }
   ];
   const socialHTML = () => {

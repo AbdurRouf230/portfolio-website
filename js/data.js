@@ -16,8 +16,8 @@ const PROFILE = {
     github: "https://github.com/AbdurRouf230",
     leetcode: "https://leetcode.com/u/Abdur_Rouf/",
     hackerrank: "https://www.hackerrank.com/profile/abdur230rouf",
-    linkedin: "",
-    facebook: "",
+    linkedin: "https://www.linkedin.com/in/abdur-rouf-111834227/",
+    facebook: "https://www.facebook.com/abdur.rouf.203958",
     twitter: ""
   }
 };

@@ -367,6 +367,8 @@ a.contact-card:hover { border-color: var(--accent); transform: translateX(4px); 
   background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); font-size: 1.1rem;
 }
 .c-wa { background: rgba(37, 211, 102, 0.15); color: #25d366; }
+.c-li { background: rgba(10, 102, 194, 0.15); color: #2d8cf0; }
+.c-fb { background: rgba(24, 119, 242, 0.15); color: #3b8cf5; }
 .contact-form {
   display: grid; gap: 1rem; padding: 1.8rem; border-radius: var(--radius);
   background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow);
