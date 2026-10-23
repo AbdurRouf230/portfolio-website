@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details | Abdur Rouf</title>
+  <meta name="description" content="Project details from Abdur Rouf's portfolio: tech stack, challenges and future plans." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="navbar scrolled" id="navbar">
+    <nav class="container nav-inner" aria-label="Main">
+      <a href="index.html#home" class="logo" aria-label="Abdur Rouf, home">
+        <span class="logo-mark">AR</span><span class="logo-text">Abdur<span class="accent">.</span>Rouf</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects" class="active">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle light and dark theme"><i class="fa-solid fa-moon"></i></button>
+        <a href="index.html#contact" class="btn btn-primary btn-sm nav-hire">Hire me</a>
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="project-root"></main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html#home" class="logo"><span class="logo-mark">AR</span><span class="logo-text">Abdur<span class="accent">.</span>Rouf</span></a>
+      <ul class="footer-links">
+        <li><a href="index.html#about">About</a></li><li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li><li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="socials socials-sm" id="footer-socials"></div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Abdur Rouf. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/data.js"></script>
+  <script src="js/project.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

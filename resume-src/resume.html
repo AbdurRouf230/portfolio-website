@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Abdur Rouf - Resume</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<style>
+  @page { size: A4; margin: 11mm 12mm 11mm 12mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif; font-size: 10pt; line-height: 1.24; color: #111; }
+  a { color: inherit; text-decoration: none; }
+  p { margin: 0; }
+  ul { margin: 1pt 0 0; padding-left: 13pt; }
+  li { margin: 0.6pt 0; }
+
+  /* Header */
+  header { text-align: center; border-bottom: 1.2px solid #8a8a8a; padding-bottom: 5pt; margin-bottom: 9pt; }
+  h1 { margin: 0; font-size: 34pt; line-height: 1.05; font-weight: 300; font-family: "Calibri Light", Calibri, sans-serif; letter-spacing: 0.5px; }
+  h1 b { font-weight: 700; font-family: Calibri, sans-serif; }
+  .contact { margin-top: 3pt; font-size: 10pt; }
+  .contact span { white-space: nowrap; }
+  .contact span + span::before { content: "|"; margin: 0 5pt; color: #555; }
+  .contact i { margin-right: 3pt; font-size: 9pt; }
+  .fa-phone { color: #1f1f1f; } .fa-envelope { color: #3b82c4; } .fa-github { color: #111; }
+  .fa-location-dot { color: #c0392b; }
+  .lc { color: #e7a11a; font-weight: 700; margin-right: 3pt; font-size: 9pt; }
+  .fa-hackerrank { color: #1ba94c; }
+
+  /* Columns */
+  .cols { display: grid; grid-template-columns: 1fr 34%; gap: 0 16pt; }
+  h2 { margin: 0 0 3pt; font-size: 15pt; font-weight: 700; letter-spacing: 0.3px; break-after: avoid; }
+  section { margin-bottom: 8pt; }
+  .page2 { break-before: page; }
+  .page2 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16pt; }
+  .page2 .pub { margin-bottom: 5pt; }
+
+  /* Skills */
+  .skill { margin: 0 0 1.5pt; }
+  .skill b { text-transform: uppercase; }
+
+  /* Experience / projects */
+  .org { font-weight: 700; text-transform: uppercase; margin-top: 2pt; }
+  .org span { text-transform: none; }
+  .role { margin-bottom: 2pt; }
+  .sub { text-decoration: underline; margin-top: 3pt; break-after: avoid; }
+  .block { break-inside: avoid; }
+  .impact { font-weight: 700; font-style: italic; margin: 3pt 0 2pt; }
+  .proj-title { font-weight: 700; margin-top: 3pt; }
+  .proj-title span { font-weight: 400; }
+
+  /* Right column */
+  .school { font-weight: 700; text-transform: uppercase; color: #1c3f8c; line-height: 1.2; }
+  .r-item { margin-bottom: 5pt; break-inside: avoid; }
+  .award { font-weight: 700; text-transform: uppercase; color: #1c3f8c; }
+  .award span { text-transform: none; font-weight: 400; color: #111; }
+  .plain { list-style: none; padding: 0; margin: 0; }
+  .plain li { margin: 0 0 1pt; }
+  .course { color: #1c3f8c; }
+  .pub { margin-bottom: 4pt; break-inside: avoid; }
+  .pub .t { font-style: italic; }
+  .status { font-weight: 700; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Abdur <b>Rouf</b></h1>
+  <p class="contact">
+    <span><i class="fa-solid fa-phone"></i>+880 1982-212046</span><span><i class="fa-regular fa-envelope"></i><a href="mailto:abdur230rouf@gmail.com">abdur230rouf@gmail.com</a></span><span><i class="fa-solid fa-location-dot"></i>Mirpur-10, Dhaka, Bangladesh</span>
+  </p>
+  <p class="contact">
+    <span><i class="fa-brands fa-github"></i><a href="https://github.com/AbdurRouf230">AbdurRouf230</a></span><span><span class="lc">LC</span><a href="https://leetcode.com/u/Abdur_Rouf/">leetcode.com/u/Abdur_Rouf</a></span><span><i class="fa-brands fa-hackerrank"></i><a href="https://www.hackerrank.com/profile/abdur230rouf">abdur230rouf</a></span>
+  </p>
+</header>
+
+<div class="cols">
+  <!-- ================= LEFT ================= -->
+  <div>
+    <section>
+      <h2>SKILLS</h2>
+      <p class="skill"><b>Front End Development</b>| React • Next.js • JavaScript (ES6+) • TypeScript • Tailwind CSS • DaisyUI • HTML • CSS</p>
+      <p class="skill"><b>Back End Development</b>| Node.js • Express.js • MongoDB • Firebase Auth • SQL • Flask</p>
+      <p class="skill"><b>Machine Learning</b>| Python • PyTorch • scikit-learn • NumPy • Pandas • TensorFlow Lite (INT8) • CNN • LSTM / GRU • Transformers • LangChain (RAG)</p>
+      <p class="skill"><b>Embedded Systems</b>| Arduino • ESP32 • C / C++ • I2C • UART • Sensor integration • Circuit debugging</p>
+      <p class="skill"><b>Tools</b>| Git • GitHub • Figma • VS Code • Remote sensing &amp; GIS</p>
+      <p class="skill"><b>Soft Skills</b>| Team player • Fast learner • Problem solver • Calm under deadlines</p>
+    </section>
+
+    <section>
+      <h2>EXPERIENCE</h2>
+      <p class="org">Independent University, Bangladesh | <span>Python, PyTorch, ESP32, Remote Sensing</span></p>
+      <p class="role">Undergraduate Research | Dhaka, Bangladesh</p>
+
+      <div class="block">
+        <p class="sub">Embedded thermal sensing with on-device machine learning</p>
+        <ul>
+          <li>Collected datasets with AMG8833 (8x8) and MLX90640 (32x24) thermal sensors for occupancy and posture classification.</li>
+          <li>Trained a dual-head CNN for classification and heat-source localisation, quantised it to INT8 and deployed it on an ESP32.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <p class="sub">National-scale PM2.5 exposure and brick-kiln vulnerability mapping</p>
+        <ul>
+          <li>Built a machine-learning framework estimating school-level PM2.5 exposure across Bangladesh.</li>
+          <li>Fused satellite trace-gas retrievals, aerosol data and kiln proximity for 18k-34k geolocated institutions.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <p class="sub">Smart farming hardware</p>
+        <ul>
+          <li>Multi-crop disease detection (cauliflower, strawberry, cabbage), spraying prevention and a farmer early-alert system.</li>
+        </ul>
+      </div>
+      <p class="impact">Research produced 2 journal papers under review (Springer Nature, Elsevier) and 3 conference submissions (IEEE/ACM BDCAT 2026, SOCTA 2026).</p>
+
+      <p class="org" style="margin-top:6pt">Programming Hero | <span>React, Next.js, Node.js, MongoDB, Firebase</span></p>
+      <p class="role">MERN Stack Web Development | 2025 - 2026 | Online</p>
+      <ul>
+        <li>Built responsive websites and React apps every week from Figma designs under strict deadlines.</li>
+        <li>Shipped 7+ projects covering DOM scripting, React Router, charts, Firebase authentication and Next.js.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>PROJECTS</h2>
+      <div class="block">
+        <p class="proj-title">Voltix Tech Store | <span>Next.js, TypeScript, Firebase, Tailwind CSS</span></p>
+        <ul>
+          <li>E-commerce app with search and category, price and rating filters kept in the URL, plus dynamic product pages.</li>
+          <li>Firebase email and Google sign-in with protected Add Product and Manage Products pages.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <p class="proj-title">Flood Shield | <span>React, Node.js, Express, MongoDB, Flask, XGBoost</span></p>
+        <ul>
+          <li>Flood monitoring and rescue platform with role-based pages for citizens, volunteers, NGOs and government.</li>
+          <li>SOS alerts with a rescue queue, relief logistics, XGBoost flood risk, YOLOv8 detection and a RAG chatbot.</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ================= RIGHT ================= -->
+  <div>
+    <section>
+      <h2>EDUCATION</h2>
+      <div class="r-item">
+        <p class="school">Independent University, Bangladesh (IUB)</p>
+        <p>B.Sc., Computer Science and Engineering</p>
+        <p>2022 - 2026 | Dhaka, Bangladesh</p>
+        <p>CGPA: 3.78/4.00</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>HONORS &amp; AWARDS</h2>
+      <div class="r-item"><p class="award">Techfest Champion | <span>Cloud project: food donation platform | IUB | Spring 2024</span></p></div>
+      <div class="r-item"><p class="award">Techfest Champion &amp; Best Hardware Project | <span>Smart farming system | IUB Spring 2024, CARD-2025</span></p></div>
+      <div class="r-item"><p class="award">Techfest Champion | <span>Algorithm project | IUB | Spring 2023</span></p></div>
+      <div class="r-item"><p class="award">Techfest Runner-up | <span>Line-following robot | IUB | Summer 2023</span></p></div>
+      <div class="r-item"><p class="award">VC's List &amp; Dean's List | <span>IUB | Spring 2023, Summer 2022</span></p></div>
+    </section>
+
+    <section>
+      <h2>PROBLEM SOLVING</h2>
+      <ul class="plain">
+        <li><b>LeetCode:</b> 32 solved (26 Easy, 6 Medium)</li>
+        <li><b>HackerRank:</b> Problem Solving (1 star), Java (3 stars)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>CERTIFICATIONS</h2>
+      <ul class="plain">
+        <li>MERN Stack Developer: Programming Hero</li>
+        <li>Graphics and UI Designer: SEIP</li>
+        <li>CCNA Module 1: Cisco Networking Academy</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>COURSEWORK</h2>
+      <p class="course">Algorithms • Object-Oriented Programming (Java) • Digital Logic Design • Microprocessors • Numerical Methods • Data Mining</p>
+    </section>
+
+    <section>
+      <h2>MORE PROJECTS</h2>
+      <div class="r-item"><p class="award">Hero IO App Store | <span>React, React Router, Recharts. App store with search, rating charts and install tracking.</span></p></div>
+      <div class="r-item"><p class="award">RescueLine BD | <span>HTML, Tailwind, JavaScript. Emergency hotline directory with call history. Live on GitHub Pages.</span></p></div>
+    </section>
+
+    <section>
+      <h2>LANGUAGES</h2>
+      <p>English • Bangla • French (Beginner)</p>
+    </section>
+
+    <section>
+      <h2>INTERESTS</h2>
+      <p>Electronics • RC cars • CanSat • Tech fests • Learning French • Remote sensing research</p>
+    </section>
+  </div>
+</div>
+
+<div class="page2">
+    <section>
+      <h2>PUBLICATIONS</h2>
+      <p class="pub">A. Yasin, <b>A. Rouf</b> (corresponding author), et al. <span class="t">Real-Time Joint Classification and Heat-Source Localization on Native 8x8 Thermal Frames with a Lightweight Dual-Head CNN for Microcontroller Deployment.</span> Scientific Reports (Springer Nature). <span class="status">Under review</span></p>
+      <p class="pub">M. Khan, S. Rashid, <b>A. Rouf</b> (equal contribution), et al. <span class="t">Mapping School Vulnerability to Brick Kiln Exposure in Bangladesh Using Remote Sensing and Geospatial Analysis.</span> Remote Sensing Applications: Society and Environment (Elsevier). <span class="status">Under review</span></p>
+      <p class="pub"><b>A. Rouf</b>, et al. <span class="t">A Novel Machine Learning-Based PM2.5 Exposure Estimation Framework for Educational Institutions in Bangladesh.</span> IEEE/ACM BDCAT 2026. <span class="status">Submitted</span></p>
+      <p class="pub"><b>A. Rouf</b>, et al. <span class="t">An AI/ML-based Remote-Sensing Framework for Automatic Vulnerability Analysis of Educational Institutions Near Brick Kilns in Bangladesh.</span> IEEE/ACM BDCAT 2026. <span class="status">Submitted</span></p>
+      <p class="pub">S. M. Haa-mim, M. R. Uddin, <b>A. Rouf</b>, et al. <span class="t">A Dual-Head Convolutional Network for Joint Human Presence, Posture and Bounding-Box Estimation from Ultra-Low-Resolution Thermal Images.</span> SOCTA 2026. <span class="status">Submitted</span></p>
+      <p class="pub"><b>A. Rouf</b> (first author). <span class="t">MAE-Pretrained Multi-Scale Lightweight CNN for Four-Class Brain Tumor MRI Classification.</span> FICTA 2027. <span class="status">In preparation</span></p>
+    </section></div>
+</body>
+</html>

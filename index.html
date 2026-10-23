@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdur Rouf | Full-Stack Web Developer</title>
+  <meta name="description" content="Portfolio of Abdur Rouf: Full-Stack (MERN) web developer and ML & embedded systems researcher from Dhaka, Bangladesh." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    // Apply saved theme before paint to avoid a flash.
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <nav class="container nav-inner" aria-label="Main">
+      <a href="#home" class="logo" aria-label="Abdur Rouf, home">
+        <span class="logo-mark">AR</span><span class="logo-text">Abdur<span class="accent">.</span>Rouf</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle light and dark theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-hire">Hire me</a>
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot"></span> Available for work &amp; internships</p>
+          <h1>Hi, I'm <span class="gradient-text">Abdur Rouf</span></h1>
+          <h2 class="role">
+            <span id="typed-role">Full-Stack Web Developer</span><span class="caret" aria-hidden="true"></span>
+          </h2>
+          <p class="hero-intro">
+            CSE graduate from Independent University, Bangladesh. I build fast, responsive web apps with the
+            MERN stack and Next.js, and I research machine learning that runs on tiny microcontrollers and
+            satellite data that maps air pollution across Bangladesh.
+          </p>
+
+          <div class="hero-cta">
+            <a href="assets/resume/Abdur-Rouf-Resume.pdf" download="Abdur-Rouf-Resume.pdf" class="btn btn-primary" id="resume-btn">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="assets/resume/Abdur-Rouf-Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
+              <i class="fa-regular fa-eye"></i> View Resume
+            </a>
+          </div>
+
+          <div class="socials" id="hero-socials" aria-label="Social links"></div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="assets/img/abdur-rouf.jpg" alt="Portrait of Abdur Rouf" width="720" height="900" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container stats">
+        <div class="stat"><strong>3.78</strong><span>CGPA, CSE @ IUB</span></div>
+        <div class="stat"><strong>7+</strong><span>Web projects built</span></div>
+        <div class="stat"><strong>6</strong><span>Research papers</span></div>
+        <div class="stat"><strong>4</strong><span>Techfest awards</span></div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">About me</p>
+          <h2>Curious builder, from circuits to the cloud</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <h3><i class="fa-solid fa-route"></i> My programming journey</h3>
+            <p>
+              I started Computer Science and Engineering at <strong>Independent University, Bangladesh</strong> in 2022.
+              My first real program was a Java OOP project (a movie production house manager), and soon after I was
+              writing algorithms for competitions and wiring logic gates for a line-following robot. Those early wins
+              at IUB Techfest (Champion in the algorithm track, runner-up with the LFR bot) got me hooked on building
+              things people can see and use.
+            </p>
+            <p>
+              From there I went two ways at once. On the hardware side I learned Arduino and ESP32, which grew into
+              research on running neural networks on microcontrollers. On the software side I joined
+              <strong>Programming Hero's MERN Stack course</strong>, moving from plain HTML and CSS pages to JavaScript,
+              React, Firebase, Node, Express, MongoDB and Next.js.
+            </p>
+
+            <h3><i class="fa-solid fa-heart"></i> Work I enjoy</h3>
+            <p>
+              I love turning a design into a clean, responsive interface and then wiring it to real data. My favourite
+              projects sit where the web meets machine learning, like <em>Flood Shield</em>, where a React dashboard
+              talks to an Express API and a Python model. I enjoy problems with a clear social impact: emergency
+              services, flood response, air quality around schools.
+            </p>
+
+            <h3><i class="fa-solid fa-person-hiking"></i> Beyond the keyboard</h3>
+            <p>
+              Outside programming I tinker with electronics: RC cars, sensor kits and a CanSat with RF modules and
+              pressure sensors. I enjoy competing in tech fests with friends, I'm learning French, and I like reading
+              research papers on remote sensing more than I probably should.
+            </p>
+          </div>
+
+          <aside class="about-card reveal">
+            <h3>Quick facts</h3>
+            <ul class="facts">
+              <li><i class="fa-solid fa-location-dot"></i><span>Mirpur-10, Dhaka, Bangladesh</span></li>
+              <li><i class="fa-solid fa-graduation-cap"></i><span>B.Sc. in CSE, IUB (2022 - 2026)</span></li>
+              <li><i class="fa-solid fa-language"></i><span>English, Bangla, French (beginner)</span></li>
+              <li><i class="fa-solid fa-certificate"></i><span>MERN Stack Developer - Programming Hero</span></li>
+              <li><i class="fa-solid fa-pen-ruler"></i><span>SEIP Graphics &amp; UI Designer</span></li>
+              <li><i class="fa-solid fa-network-wired"></i><span>CCNA Module 1</span></li>
+            </ul>
+            <h3>In a few words</h3>
+            <div class="chips">
+              <span class="chip">Curious</span><span class="chip">Detail-oriented</span>
+              <span class="chip">Team player</span><span class="chip">Fast learner</span>
+              <span class="chip">Problem solver</span><span class="chip">Calm under deadlines</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Skills</p>
+          <h2>My toolbox</h2>
+          <p class="section-sub">Grouped by where I use them. Bars show my current comfort level.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <header><span class="skill-icon"><i class="fa-solid fa-palette"></i></span><h3>Frontend</h3></header>
+            <ul class="skill-list">
+              <li data-level="92"><i class="devicon-html5-plain colored"></i><span>HTML5</span></li>
+              <li data-level="88"><i class="devicon-css3-plain colored"></i><span>CSS3</span></li>
+              <li data-level="88"><i class="devicon-tailwindcss-original colored"></i><span>Tailwind CSS / DaisyUI</span></li>
+              <li data-level="82"><i class="devicon-javascript-plain colored"></i><span>JavaScript (ES6+)</span></li>
+              <li data-level="80"><i class="devicon-react-original colored"></i><span>React</span></li>
+              <li data-level="68"><i class="devicon-nextjs-plain"></i><span>Next.js</span></li>
+              <li data-level="60"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header><span class="skill-icon"><i class="fa-solid fa-server"></i></span><h3>Backend &amp; Database</h3></header>
+            <ul class="skill-list">
+              <li data-level="72"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></li>
+              <li data-level="72"><i class="devicon-express-original"></i><span>Express.js</span></li>
+              <li data-level="70"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></li>
+              <li data-level="76"><i class="devicon-firebase-plain colored"></i><span>Firebase Auth</span></li>
+              <li data-level="65"><i class="devicon-azuresqldatabase-plain colored"></i><span>SQL</span></li>
+              <li data-level="62"><i class="devicon-flask-original"></i><span>Flask (ML APIs)</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header><span class="skill-icon"><i class="fa-solid fa-brain"></i></span><h3>Machine Learning</h3></header>
+            <ul class="skill-list">
+              <li data-level="88"><i class="devicon-python-plain colored"></i><span>Python</span></li>
+              <li data-level="84"><i class="devicon-pytorch-original colored"></i><span>PyTorch</span></li>
+              <li data-level="82"><i class="devicon-scikitlearn-plain colored"></i><span>scikit-learn</span></li>
+              <li data-level="84"><i class="devicon-numpy-plain colored"></i><span>NumPy / Pandas</span></li>
+              <li data-level="72"><i class="devicon-tensorflow-original colored"></i><span>TensorFlow Lite (INT8)</span></li>
+              <li data-level="66"><i class="fa-solid fa-link"></i><span>LangChain / RAG</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <header><span class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span><h3>Embedded &amp; Tools</h3></header>
+            <ul class="skill-list">
+              <li data-level="82"><i class="devicon-arduino-plain colored"></i><span>Arduino / ESP32</span></li>
+              <li data-level="70"><i class="devicon-cplusplus-plain colored"></i><span>C / C++</span></li>
+              <li data-level="84"><i class="devicon-git-plain colored"></i><span>Git &amp; GitHub</span></li>
+              <li data-level="78"><i class="devicon-figma-plain colored"></i><span>Figma</span></li>
+              <li data-level="74"><i class="fa-solid fa-satellite"></i><span>Remote sensing &amp; GIS</span></li>
+              <li data-level="66"><i class="devicon-java-plain colored"></i><span>Java (OOP)</span></li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Problem solving -->
+        <div class="ps-head reveal">
+          <h3><i class="fa-solid fa-puzzle-piece"></i> Problem solving</h3>
+          <p>I practise data structures and algorithms on LeetCode and HackerRank.</p>
+        </div>
+        <div class="ps-grid">
+          <article class="ps-card reveal">
+            <header class="ps-top">
+              <span class="ps-logo ps-leetcode"><span class="mask-icon icon-leetcode"></span></span>
+              <div><h4>LeetCode</h4><span class="ps-user">@Abdur_Rouf</span></div>
+              <a class="btn btn-ghost btn-sm" href="https://leetcode.com/u/Abdur_Rouf/" target="_blank" rel="noopener">Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </header>
+            <div class="lc-body">
+              <div class="lc-ring" style="--easy: 26; --med: 6; --total: 32;" role="img" aria-label="32 problems solved: 26 easy, 6 medium, 0 hard">
+                <div><strong>32</strong><span>Solved</span></div>
+              </div>
+              <ul class="lc-levels">
+                <li><span class="lv lv-easy">Easy</span><span class="lc-bar"><span style="--w: 81%"></span></span><b>26</b></li>
+                <li><span class="lv lv-med">Medium</span><span class="lc-bar"><span style="--w: 19%"></span></span><b>6</b></li>
+                <li><span class="lv lv-hard">Hard</span><span class="lc-bar"><span style="--w: 0%"></span></span><b>0</b></li>
+              </ul>
+            </div>
+            <div class="ps-foot">
+              <span class="ps-label">Languages</span>
+              <div class="chips"><span class="chip">Python &middot; 30</span><span class="chip">Java &middot; 2</span></div>
+              <span class="ps-label">Topics</span>
+              <div class="chips"><span class="chip">Arrays &amp; Hashing</span><span class="chip">Dynamic Programming</span><span class="chip">Divide &amp; Conquer</span><span class="chip">Trie</span></div>
+            </div>
+          </article>
+
+          <article class="ps-card reveal">
+            <header class="ps-top">
+              <span class="ps-logo ps-hackerrank"><i class="fa-brands fa-hackerrank"></i></span>
+              <div><h4>HackerRank</h4><span class="ps-user">@abdur230rouf</span></div>
+              <a class="btn btn-ghost btn-sm" href="https://www.hackerrank.com/profile/abdur230rouf" target="_blank" rel="noopener">Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </header>
+            <div class="hr-badges">
+              <div class="hr-badge hr-ps">
+                <i class="fa-solid fa-terminal"></i>
+                <strong>Problem Solving</strong>
+                <span class="stars" aria-label="1 star"><i class="fa-solid fa-star"></i></span>
+              </div>
+              <div class="hr-badge hr-java">
+                <i class="fa-brands fa-java"></i>
+                <strong>Java</strong>
+                <span class="stars" aria-label="3 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              </div>
+            </div>
+            <p class="ps-note">Badges earned by solving HackerRank challenges in each track.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Education</p>
+          <h2>Academic background</h2>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-logo"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="edu-body">
+            <div class="edu-top">
+              <div>
+                <h3>Bachelor of Science in Computer Science &amp; Engineering</h3>
+                <p class="edu-school">Independent University, Bangladesh (IUB) · Dhaka</p>
+              </div>
+              <div class="edu-meta">
+                <span class="pill"><i class="fa-regular fa-calendar"></i> 2022 - 2026</span>
+                <span class="pill pill-accent"><i class="fa-solid fa-star"></i> CGPA 3.78</span>
+              </div>
+            </div>
+            <div class="edu-cols">
+              <div>
+                <h4>Honours</h4>
+                <ul class="ticks">
+                  <li>Dean's List: Summer 2022</li>
+                  <li>Vice Chancellor's List: Spring 2023</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Relevant coursework</h4>
+                <div class="chips">
+                  <span class="chip">Algorithms</span><span class="chip">OOP (Java)</span>
+                  <span class="chip">Digital Logic Design</span><span class="chip">Microprocessors</span>
+                  <span class="chip">Numerical Methods</span><span class="chip">Data Mining</span>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-row reveal">
+          <div class="cert"><i class="fa-solid fa-laptop-code"></i><div><strong>MERN Stack Developer</strong><span>Programming Hero</span></div></div>
+          <div class="cert"><i class="fa-solid fa-pen-nib"></i><div><strong>Graphics &amp; UI Designer</strong><span>SEIP</span></div></div>
+          <div class="cert"><i class="fa-solid fa-network-wired"></i><div><strong>CCNA - Module 1</strong><span>Cisco Networking Academy</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Experience</p>
+          <h2>Research &amp; hands-on work</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-temperature-half"></i></span>
+            <div class="tl-card">
+              <p class="tl-tag">Research · Embedded ML</p>
+              <h3>Thermal Sensing on Microcontrollers</h3>
+              <p>Collected datasets with AMG8833 (8×8) and MLX90640 (32×24) thermal sensors, trained a dual-head CNN for
+                occupancy / posture classification and heat-source localisation, quantised it to INT8 and deployed it on an ESP32.</p>
+              <p class="tl-out"><i class="fa-solid fa-file-lines"></i> Corresponding author: Scientific Reports (under review). Co-author: SOCTA 2026.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-earth-asia"></i></span>
+            <div class="tl-card">
+              <p class="tl-tag">Research · Remote Sensing &amp; Geospatial ML</p>
+              <h3>PM2.5 Exposure &amp; Brick-Kiln Vulnerability Mapping</h3>
+              <p>National-scale machine-learning framework that combines satellite trace-gas retrievals, aerosol data and
+                brick-kiln proximity to estimate PM2.5 exposure for 18k-34k geolocated schools across Bangladesh.</p>
+              <p class="tl-out"><i class="fa-solid fa-file-lines"></i> Elsevier RSASE (under review) and two papers submitted to IEEE/ACM BDCAT 2026.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-seedling"></i></span>
+            <div class="tl-card">
+              <p class="tl-tag">Hardware · Smart Farming</p>
+              <h3>Multi-Crop Disease Detection &amp; Farmer Alert System</h3>
+              <p>Hardware that detects disease in cauliflower, strawberry and cabbage, prevents unnecessary spraying and
+                sends early alerts to farmers.</p>
+              <p class="tl-out"><i class="fa-solid fa-trophy"></i> Techfest Spring '24 Champion · CARD-2025 Best Hardware Project.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot"><i class="fa-solid fa-laptop-code"></i></span>
+            <div class="tl-card">
+              <p class="tl-tag">Training · 2025 - 2026</p>
+              <h3>MERN Stack Web Development - Programming Hero</h3>
+              <p>Built responsive sites and React apps every week against Figma designs and strict deadlines:
+                landing pages, a DOM-driven emergency directory, React apps with routing and charts, Firebase auth and a Next.js store.</p>
+              <p class="tl-out"><i class="fa-solid fa-code-branch"></i> 7+ shipped projects, see below.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="awards reveal">
+          <h3><i class="fa-solid fa-trophy"></i> Competitions</h3>
+          <ul>
+            <li><strong>Champion:</strong> Cloud project: food donation platform, IUB Techfest Spring '24</li>
+            <li><strong>Champion:</strong> Algorithm project, IUB Techfest Spring '23</li>
+            <li><strong>Runner-up:</strong> Line-following robot (DLD), IUB Techfest Summer '23</li>
+            <li><strong>Quarter-finalist:</strong> RC project, IUB Techfest Spring '23</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Projects</p>
+          <h2>Things I've built</h2>
+          <p class="section-sub">Click <em>View Details</em> for the tech stack, challenges and future plans of each project.</p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+
+        <div class="research reveal" id="research">
+          <h3><i class="fa-solid fa-flask"></i> Research publications</h3>
+          <ul class="pub-list" id="pub-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Contact</p>
+          <h2>Let's work together</h2>
+          <p class="section-sub">Have a project, an internship or a research idea? Reach me through any of these.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cards reveal">
+            <a class="contact-card" href="mailto:abdur230rouf@gmail.com">
+              <span class="c-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span><small>Email</small><strong>abdur230rouf@gmail.com</strong></span>
+            </a>
+            <a class="contact-card" href="tel:+8801982212046">
+              <span class="c-icon"><i class="fa-solid fa-phone"></i></span>
+              <span><small>Phone</small><strong>+880 1982-212046</strong></span>
+            </a>
+            <a class="contact-card" href="https://wa.me/8801982212046" target="_blank" rel="noopener">
+              <span class="c-icon c-wa"><i class="fa-brands fa-whatsapp"></i></span>
+              <span><small>WhatsApp</small><strong>+880 1982-212046</strong></span>
+            </a>
+            <div class="contact-card">
+              <span class="c-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <span><small>Location</small><strong>Mirpur-10, Dhaka, Bangladesh</strong></span>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="field-row">
+              <label>Your name<input type="text" name="name" required placeholder="Jane Doe" /></label>
+              <label>Your email<input type="email" name="email" required placeholder="jane@example.com" /></label>
+            </div>
+            <label>Subject<input type="text" name="subject" placeholder="Project enquiry" /></label>
+            <label>Message<textarea name="message" rows="5" required placeholder="Tell me a little about your idea..."></textarea></label>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send message</button>
+            <p class="form-note" id="form-note" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo"><span class="logo-mark">AR</span><span class="logo-text">Abdur<span class="accent">.</span>Rouf</span></a>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="socials socials-sm" id="footer-socials"></div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Abdur Rouf. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
